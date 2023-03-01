@@ -1,8 +1,8 @@
-const string = "target";
-const reverse = [];
-let ri = 0;
-for (let i = string.length - 1; i >= 0; i--) {
-    reverse[ri] = string[i];
-    ri++;
+function invertString(string) {
+  let newString = "";
+  for (let i = string.length - 1; i >= 0; i--) {
+    newString += string[i];
+  }
+  return newString;
 }
-console.log(reverse.join(""));
+console.log(invertString("Victor"));
